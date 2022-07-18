@@ -10,6 +10,7 @@ namespace MyLibrary
 
         public Triangle(double a, double b, double c)
         {
+            //Does triangle exist
             if (a+b<c || a+c<b || c+b<a)
             {
                 throw new ArgumentOutOfRangeException(nameof(a));
@@ -25,11 +26,12 @@ namespace MyLibrary
         {
             double p = (A + B + C) / 2;
 
-            return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
+            return Math.Sqrt(p * (p - A) * (p - B) * (p - C)); //heron's formula of making square
         }
 
         public bool isTriangleRight()
         {
+            // The Pythagorean proposition
             if (A > B && A > C)
             {
                 return A * A == B * B + C * C;

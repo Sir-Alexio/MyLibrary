@@ -12,6 +12,7 @@ namespace MyLibrary
 
         public MyСircle(double radius)
         {
+            //Check for correct radius
             if (radius < 0)
             {
                 throw new ArgumentOutOfRangeException(nameof(radius));
