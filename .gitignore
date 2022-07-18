@@ -1,0 +1,6 @@
+.vs
+packages
+bin
+obj
+MyLibrary.csproj
+MyLibrary.Tests.csproj
